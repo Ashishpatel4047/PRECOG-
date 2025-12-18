@@ -7,8 +7,12 @@ Deep learning needs data. For this task, you will need to synthesize the dataset
            Plain white background
            Fixed font
            Fixed capitalization
-          Text = single word per image
+           Text = single word per image
 
      # The Hard Set Multiple fonts, fluctuating capitalization across individual letters, and noisy or textured backgrounds. Ensure diversity in the dataset to test your model’s ability to generalize.
-
+           Multiple fonts
+           Random capitalization (HeLLo, wOrLd)
+           Noisy / textured backgrounds
      # The Bonus Set This set is used for the bonus Generation task and can be ignored if you intend to skip that task. It borrows all conditions from the hard set with the added condition that if the background          is green, the word is rendered normally, but if the background is red, the word is rendered in reverse. Note: The output does not change. For example, if “hello” is rendered on a red image as “olleh,” your           model should still produce “hello.”
+           Green background → word normal
+           Red background → word reversed (output still same)
